@@ -30,7 +30,7 @@ npm run build:prod
 ###  组件库实时预览快照| 未完成|
 ###  组件自定义上传| 未完成|
 ###  组件拖拽、释放、渲染| 未完成|
-###  画布组件拖拽、删除| 未完成|
+###  画布组件拖拽、删除| 完成|
 ###  组件事件添加、修改、穿透| 未完成|
 ###  组件JS动态修改、保存库| 未完成|
 ###  组件CSS动态修改、保存库| 未完成|
@@ -47,3 +47,4 @@ npm run build:prod
 <img src="https://github.com/kevinlMis/atomV/blob/master/src/doc/1.png">
 <img src="https://github.com/kevinlMis/atomV/blob/master/src/doc/2.png">
 <img src="https://github.com/kevinlMis/atomV/blob/master/src/doc/3.png">
+<img src="https://github.com/kevinlMis/atomV/blob/master/src/doc/4.png">

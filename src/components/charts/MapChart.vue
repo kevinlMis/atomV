@@ -13,8 +13,8 @@
 
 <script>
 import echarts from 'echarts'
+import '@/assets/lib/echarts-liquidfill.min'
 import resize from '@/mixin/resize'
-import chinaJson from '@/utils/china.js'
 
 export default {
   mixins: [resize],
@@ -24,11 +24,58 @@ export default {
       default() {
         return {}
       }
+    },
+    chartData: {
+      type: Array,
+      default() {
+        return [{
+          c1: "#00c7ef",
+          c2: "#0AF3FF"
+        },
+        {
+          c1: "#FF8E14",
+          c2: "#FFA12F"
+        },
+        {
+          c1: "#AF5AFF",
+          c2: "#B62AFF"
+        },
+        {
+          c1: "#25dd59",
+          c2: "#29f463"
+        },
+        {
+          c1: "#6E35FF",
+          c2: "#6E67FF"
+        },
+        {
+          c1: "#002AFF",
+          c2: "#0048FF"
+        },
+        {
+          c1: "#8CD282",
+          c2: "#95F300"
+        },
+        {
+          c1: "#3B0EFF",
+          c2: "#604BFF"
+        },
+        {
+          c1: "#00BE74",
+          c2: "#04FDB8"
+        },
+        {
+          c1: "#4a3ac6",
+          c2: "#604BFF"
+        }
+        ]
+      }
     }
   },
   data() {
     return {
-      chart: null
+      chart: null,
+      legendColor: []
     }
   },
   watch: {
@@ -47,94 +94,145 @@ export default {
   methods: {
     initChart() {
       this.chart = echarts.init(this.$refs.myChart)
-      echarts.registerMap('china', chinaJson)
       this.setOptions()
     },
-    convertData() {
-      const geoCoordMap = [
-        { name: '台湾省', value: 1000 },
-        { name: '黑龙江省', value: 80 },
-        { name: '内蒙古自治区', value: 110 },
-        { name: "吉林省", value: 2584 },
-        { name: '北京市', value: 116 },
-        { name: "辽宁省", value: 1216 },
-        { name: "河北省", value: 12 },
-        { name: "天津市", value: 12 },
-        { name: "山西省", value: 12 },
-        { name: "陕西省", value: 12 },
-        { name: "甘肃省", value: 12 },
-        { name: "宁夏回族自治区", value: 12 },
-        { name: "青海省", value: 12 },
-        { name: "新疆维吾尔自治区", value: 12 },
-        { name: "西藏自治区", value: 12 },
-        { name: "四川省", value: 12 },
-        { name: "重庆省", value: 12 },
-        { name: "山东省", value: 12 },
-        { name: "河南省", value: 12 },
-        { name: "江苏省", value: 12 },
-        { name: "安徽省", value: 12 },
-        { name: "湖北省", value: 12 },
-        { name: "浙江省", value: 12 },
-        { name: "福建省", value: 12 },
-        { name: "江西省", value: 12 },
-        { name: "湖南省", value: 12 },
-        { name: "贵州省", value: 12 },
-        { name: "云南省", value: 12 },
-        { name: "广东省", value: 12 },
-        { name: "广西壮族自治区", value: 12 },
-        { name: "海南省", value: 12 },
-        { name: '上海市', value: 12 },
-        { name: '香港', value: 12 },
-        { name: '澳门', value: 12 }
-      ]
-      return geoCoordMap
-    },
     setOptions() {
+      var value = 0.27;
+
       this.chart.setOption({
-        visualMap: {
-          left: 'left',
-          bottom: 'bottom',
-          max: 1000,
-          textStyle: {
-            color: '#fff'
-          },
-          inRange: {
-            color: ['#F4E9E7', '#F12B07']
-          },
-          text: ['高', '低']
-        },
-        geo: {
-          map: 'china',
-          show: true,
-          roam: true,
-          zoom: 1.4,
-          top: 40,
-          aspectScale: 0.9,
-          boundingCoords: [0, 0],
-          label: {
-            normal: {
-              show: true
+        backgroundColor: '#181b22',
+        title: [
+          {
+            text: (value * 100).toFixed(0) + '%',
+            left: '50%',
+            top: '40%',
+            textAlign: 'center',
+            textStyle: {
+              fontSize: '30',
+              fontWeight: '400',
+              color: '#8b8d90',
+              textAlign: 'center',
+              textBorderColor: 'rgba(0, 0, 0, 0)',
+              textShadowColor: '#000',
+              textShadowBlur: '0',
+              textShadowOffsetX: 0,
+              textShadowOffsetY: 1
             }
+          }
+        ],
+        polar: {
+          radius: ['43%', '40%'],
+          center: ['50%', '50%']
+        },
+        angleAxis: {
+          max: 100,
+          clockwise: false,
+          axisLine: {
+            show: false
           },
-          emphasis: {
-            itemStyle: {
-              areaColor: '#0a2dae',
-              color: '#070B1F'
+          axisTick: {
+            show: false
+          },
+          axisLabel: {
+            show: false
+          },
+          splitLine: {
+            show: false
+          }
+        },
+        radiusAxis: {
+          type: 'category',
+          show: true,
+          axisLabel: {
+            show: false
+          },
+          axisLine: {
+            show: false
+          },
+          axisTick: {
+            show: false
+          }
+        },
+        series: [
+          {
+            type: 'liquidFill',
+            radius: '40%',
+            z: 1,
+            center: ['50%', '50%'],
+            amplitude: 20,
+            color: {
+              type: 'linear',
+              x: 0,
+              y: 0,
+              x2: 1,
+              y2: 1,
+              colorStops: [
+                {
+                  offset: 1,
+                  color: '#6c3076'
+                },
+                {
+                  offset: 0,
+                  color: '#a52058'
+                }
+              ],
+              globalCoord: false
+            },
+            data: [
+              0.3,
+              {
+                value: 0.25,
+                direction: 'left'
+              }
+            ],
+            backgroundStyle: {
+              borderWidth: 1,
+              color: 'transparent'
             },
             label: {
               normal: {
-                show: true
+                formatter: ''
+              }
+            },
+            outline: {
+              show: true,
+              itemStyle: {
+                borderWidth: 0
+              },
+              borderDistance: 0
+            }
+          },
+          {
+            name: '',
+            type: 'bar',
+            roundCap: true,
+            z: 2,
+            showBackground: true,
+            backgroundStyle: {
+              color: '#15181e'
+            },
+            data: [70],
+            coordinateSystem: 'polar',
+            itemStyle: {
+              normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0.5, 1, [
+                  {
+                    offset: 0,
+                    color: '#9b39ab'
+                  },
+                  {
+                    offset: 0.5,
+                    color: '#fe3abf'
+                  },
+                  {
+                    offset: 1,
+                    color: '#f6329a'
+                  }
+                ])
               }
             }
           }
-        },
-        series: {
-          type: 'map',
-          map: 'china',
-          name: this.config.title,
-          geoIndex: 0,
-          data: this.convertData()
-        }
+        ]
       })
     }
   }

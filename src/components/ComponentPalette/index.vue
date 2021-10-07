@@ -62,6 +62,7 @@ import PieChart from '@/components/charts/PieChart'
 import MapChart from '@/components/charts/MapChart'
 import GraphChart from '@/components/charts/GraphChart'
 import Map3DChart from '@/components/charts/Map3DChart'
+import PlatChart from '@/components/charts/PlatChart'
 
 import Draggable from 'vuedraggable'
 import store from "@/store";
@@ -201,9 +202,9 @@ export default {
                 fontColor: ''
               }
             },
-            { name: 'map', type: 'map', component: MapChart, cpnName: 'MapChart', icon: 'map-icon',
+            { name: 'maps', type: 'maps', component: MapChart, cpnName: '3dmapBall', icon: 'map-icon',
               config: {
-                title: 'map', height: 370,
+                title: 'maps', height: 370,
                 chartData: [],
                 background: '',
                 fontColor: ''
@@ -218,6 +219,14 @@ export default {
               }
             },
             { name: '3D地理图', type: '3dmap', component: Map3DChart, cpnName: 'Map3DChart', icon: '3dmap-icon',
+              config: {
+                title: '3D地理图', height: 370,
+                chartData: [],
+                background: '',
+                fontColor: ''
+              }
+            },
+            { name: '全球地图', type: '3dmapBall', component: PlatChart, cpnName: '3dmapBall', icon: '3dmap-icon',
               config: {
                 title: '3D地理图', height: 370,
                 chartData: [],
