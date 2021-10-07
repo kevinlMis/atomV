@@ -1,0 +1,296 @@
+/** 移动端初始化CSS **/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+div,
+span,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+img {
+  border: medium none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: normal;
+}
+
+em {
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+i {
+  font-style: normal;
+}
+
+/*火狐去掉按钮、连接的虚线*/
+a:focus,
+a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"]>input[type="button"]::-moz-focus-inner {
+  border: 0;
+  outline: 0;
+}
+
+/*input,button,select,textarea{outline:none;-webkit-appearance:none;}*/
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a {
+  blr: expression(this.onFocus=this.blur());
+}
+
+a:focus {
+  outline: none;
+}
+
+a.hidefocus {
+  outline: none
+}
+
+.button {
+  border-radius: 0;
+}
+
+input {
+  font-family: "微软雅黑";
+}
+
+textarea {
+  font-family: "微软雅黑";
+}
+
+img {
+  border: 0px;
+  outline-width: 0px;
+  vertical-align: top;
+}
+
+.cleafix:after {
+  clear: both;
+  content: "\200B";
+  display: block;
+  height: 0;
+}
+
+.cleafix {
+  *zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background: #fff;
+}
+
+/* 动画 */
+@-webkit-keyframes bounceIn {
+
+  /* 默认 */
+  0% {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes bounceOut {
+
+  /* 默认 */
+  0% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+  }
+}
+
+@keyframes bounceOut {
+  0% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+  }
+}
+
+.mui-content-padded {
+  margin: 0;
+  height: auto;
+}
+
+.el-message {
+  position: fixed;
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.animat {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  animation: rotation 7s linear infinite;
+  -moz-animation: rotation 7s linear infinite;
+  -webkit-animation: rotation 7s linear infinite;
+  -o-animation: rotation 7s linear infinite;
+}
+
+.srecah-header {
+  text-align: center;
+
+  .el-input {
+    width: 100%;
+    height: 32PX;
+
+    .el-input__prefix, .el-input__suffix {
+        position: absolute;
+        top: -3px;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        height: 100%;
+        color: #C0C4CC;
+        text-align: center;
+
+        .el-input__icon{
+          color: #999999;
+          font-size: 12px;
+        }
+    }
+
+    input.el-input__inner {
+      height: 100%;
+      line-height: 32PX;
+      background-color: transparent;
+      border: 0 none;
+      border-radius: 0;
+      font-size: 12px;
+      color: rgba(255,255,255, 0.7);
+      border-bottom: 1px solid rgba(255,255,255, 0.1);
+    }
+
+    ::-webkit-input-placeholder {
+      color: #999999;
+      font-size: 12px;
+    }
+  }
+}
+

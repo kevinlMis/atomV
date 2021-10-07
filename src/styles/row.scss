@@ -1,0 +1,14 @@
+$minHeight: 100PX;
+
+.el-row {
+  min-height: $minHeight;
+   .el-col {
+    min-height: $minHeight;
+    .content {
+      min-height: $minHeight;
+    }
+  }
+}
+.move {
+  cursor: pointer;
+}

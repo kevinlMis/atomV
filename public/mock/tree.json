@@ -1,0 +1,66 @@
+{
+  "success": "true",
+  "data": [
+    {
+      "id": "URIER0001",
+      "name": "Pages",
+      "tag": "My Pages",
+      "attrRelevance": "",
+      "icon": "file-icons",
+      "type": "folder",
+      "describe": "My files",
+      "children": [
+        {
+          "id": "URIER0002",
+          "name": "Pages",
+          "tag": "My Pages",
+          "type": "html",
+          "attrRelevance": "",
+          "icon": "file-icons",
+          "describe": "My files"
+        }
+      ]
+    },
+    {
+      "id": "URIER0002",
+      "name": "Pages",
+      "tag": "My Pages",
+      "attrRelevance": "",
+      "icon": "file-icons",
+      "type": "folder",
+      "describe": "My files",
+      "children": [
+        {
+          "id": "URIER0002",
+          "name": "Pages",
+          "tag": "My Pages",
+          "type": "html",
+          "attrRelevance": "",
+          "icon": "file-icons",
+          "describe": "My files"
+        }
+      ]
+    },
+    {
+      "id": "URIER0003",
+      "name": "Pages",
+      "tag": "My Pages",
+      "attrRelevance": "",
+      "icon": "file-icons",
+      "type": "folder",
+      "describe": "My files",
+      "children": [
+        {
+          "id": "URIER0002",
+          "name": "Pages",
+          "tag": "My Pages",
+          "type": "html",
+          "attrRelevance": "",
+          "icon": "file-icons",
+          "describe": "My files"
+        }
+      ]
+    }
+  ],
+  "message": "成功！"
+}
