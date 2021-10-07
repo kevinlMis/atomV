@@ -8,7 +8,14 @@
           <i />
         </span>
       </div>
-      <div class="header-center" />
+      <div class="header-center">
+        <li>
+          <span>p_simple_report</span><i />
+        </li>
+        <li>
+          <span>p_simple_report</span><i />
+        </li>
+      </div>
       <div class="header-right" />
     </header>
   </div>
@@ -148,6 +155,50 @@ export default {
 
   .header-center {
     flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    li {
+      width: 160px;
+      height: 100%;
+      position: relative;
+      border-right: 1px solid rgba(255,255,255,0.1);
+
+      span {
+        height: 100%;
+        width: calc(100% - 40px);
+        display: inline-block;
+        margin: 0 10px;
+        line-height: 40PX;
+        color: rgba(255,255,255,0.8);
+        font-size: 13px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      i {
+        position: absolute;
+        top: 10px;
+        right: 6px;
+        width: 24px;
+        height: 24px;
+        border-radius: 3PX;
+        color: rgba(255,255,255,0.8);
+
+        &::before {
+          content: 'x';
+          height: 0;
+          position: absolute;
+          top: -13px;
+          right: 7px;
+          font-size: 15px;
+        }
+      }
+    }
+
   }
 
   .header-right {
@@ -201,19 +252,5 @@ export default {
   .mui-icon-left-nav:before {
     color: #ffffff;
   }
-
-  span {
-    display: inline-block;
-    i{
-      width: 20PX;
-      height: 20PX;
-      display: inline-block;
-      margin: 12PX 13PX;
-      background: url(~@/assets/images/menu.png) no-repeat;
-      background-position: center;
-      background-size: 100%;
-    }
-  }
-
 }
 </style>

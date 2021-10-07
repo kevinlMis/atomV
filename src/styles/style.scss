@@ -79,7 +79,6 @@ input[type="file"]>input[type="button"]::-moz-focus-inner {
   outline: 0;
 }
 
-/*input,button,select,textarea{outline:none;-webkit-appearance:none;}*/
 textarea {
   resize: none;
 }
@@ -89,9 +88,6 @@ a {
   color: #333;
 }
 
-a {
-  blr: expression(this.onFocus=this.blur());
-}
 
 a:focus {
   outline: none;

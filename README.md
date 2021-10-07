@@ -14,10 +14,10 @@ npm run dev
 # build
 npm run build:prod
 
-## 使用ESLint格式化工具格式代码
+## ESLint格式化
 ## root 字体大小为12px  12px = 1rem
 
 ## 运行截图
 <img src="https://github.com/kevinlMis/atomV/blob/master/src/doc/1.png">
 <img src="https://github.com/kevinlMis/atomV/blob/master/src/doc/2.png">
- 
+<img src="https://github.com/kevinlMis/atomV/blob/master/src/doc/3.png">

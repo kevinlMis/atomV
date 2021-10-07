@@ -1,13 +1,17 @@
 <template>
   <div class="mui-content">
+    <!--toolBar-->
     <div class="operation-panel">
       <div class="panel-l">
-        <span />
-        <span />
-        <span />
+        <span class="lock-icon" />
+        <span class="unlock-icon " />
+        <span class="save-icon " />
+        <span class="preview-icon " />
+        <span class="publish-icon " />
       </div>
       <div class="panel-r">
-        <span />
+        <span class="desktop-icon" />
+        <span class="phone-icon" />
       </div>
     </div>
     <div class="main-contetn">

@@ -9,8 +9,117 @@
 
   .operation-panel {
     height: 32px;
+    line-height: 32px;
     width: 100%;
     background-color: #52575A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      width: 50%;
+      height: 100%;
+      padding: 0 5px;
+
+      span {
+        width: 25px;
+        height: 100%;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+    }
+
+    .panel-l {
+      .lock-icon {
+        background: url(~@/assets/images/锁定.png) no-repeat;
+        background-position: center;
+        background-size: 100%;
+
+        &:hover {
+          background: url(~@/assets/images/锁定_actived.png) no-repeat;
+          background-position: center;
+          background-size: 100%;
+        }
+      }
+
+      .unlock-icon {
+        background: url(~@/assets/images/解锁.png) no-repeat;
+        background-position: center;
+        background-size: 100%;
+
+        &:hover {
+          background: url(~@/assets/images/解锁_actived.png) no-repeat;
+          background-position: center;
+          background-size: 100%;
+        }
+      }
+
+      .save-icon {
+        background: url(~@/assets/images/保存.png) no-repeat;
+        background-position: center;
+        background-size: 91%;
+
+        &:hover {
+          background: url(~@/assets/images/保存_actived.png) no-repeat;
+          background-position: center;
+          background-size: 91%;
+        }
+      }
+
+      .preview-icon {
+        background: url(~@/assets/images/预览.png) no-repeat;
+        background-position: center;
+        background-size: 81%;
+
+        &:hover {
+          background: url(~@/assets/images/预览_actived.png) no-repeat;
+          background-position: center;
+          background-size: 81%;
+        }
+      }
+
+      .publish-icon {
+        background: url(~@/assets/images/icon_发布.png) no-repeat;
+        background-position: center;
+        background-size: 100%;
+      }
+    }
+
+    .panel-r {
+      .desktop-icon {
+        background: url(~@/assets/images/电脑.png) no-repeat;
+        background-position: center;
+        background-size: 90%;
+
+        &:hover {
+          background: url(~@/assets/images/电脑.png) no-repeat;
+          background-position: center;
+          background-size: 90%;
+        }
+      }
+
+      .phone-icon {
+        background: url(~@/assets/images/移动端.png) no-repeat;
+        background-position: center;
+        background-size: 90%;
+
+        &:hover {
+          background: url(~@/assets/images/移动端.png) no-repeat;
+          background-position: center;
+          background-size: 90%;
+        }
+      }
+    }
+
+    &>div:first-child {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &>div:last-child {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   .main-contetn {
@@ -42,7 +151,7 @@
       height: 100%;
       background-color: #393D40;
     }
-    
+
 
     .mui-scroll {
       padding: 20px 20px;
@@ -350,7 +459,6 @@
           margin: 6px 0;
         }
 
-
         .today-contetn {
           width: 94px;
           height: 32px;
@@ -371,12 +479,9 @@
             display: inline-block;
             color: #FFFFFF;
             text-align: center;
-
           }
         }
-
       }
-
     }
 
     .ym-raw-coal,
