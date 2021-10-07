@@ -18,6 +18,6 @@ npm run build:prod
 ## root 字体大小为12px  12px = 1rem
 
 ## 运行截图
-<img src="/doc/1.png">
-<img src="/doc/2.png">
+<img src="https://github.com/kevinlMis/atomV/blob/master/src/doc/1.png">
+<img src="https://github.com/kevinlMis/atomV/blob/master/src/doc/2.png">
  
