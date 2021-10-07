@@ -1,0 +1,41 @@
+stages:
+  - build
+  - deploy
+
+#更新、编译、打包程序
+build_job:
+  variables:
+    GIT_SUBMODULE_STRATEGY: normal
+  before_script:
+    # - git checkout master&&git submodule foreach git checkout master
+    # - git pull &&git submodule update --remote --merge
+  stage: build
+  only:
+    - master
+  script:
+    - echo '编译程序阶段'
+    - rm -rf dist/*
+    - rm -rf dist*.zip
+    - npm install
+    - npm run build:prod
+
+    - echo '拷贝编译程序，准备镜像生成环境'
+    - zip -r -q dist_$(date "+%Y%m%d%H%M%S").zip  dist #生成压缩文件
+    - cp dist*.zip  /data/gitlab-runner/docker-images/ymapp/dist.zip
+  tags:
+    - autobuild
+
+# 拷贝编译程序，移除旧版镜像及容器，生成新镜像并运行
+deploy_job:
+  variables:
+    GIT_STRATEGY: none
+  stage: deploy
+  only:
+    - master
+  script:
+    - echo '移除旧版镜像及容器，生成新镜像并运行'
+    - cd /data/gitlab-runner/docker-images/ymapp
+    - chmod 777 MakeDocker.sh
+    - bash MakeDocker.sh
+  tags:
+    - autobuild

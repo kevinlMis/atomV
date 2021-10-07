@@ -1,0 +1,358 @@
+@import './style.scss';
+@import './variables.scss';
+@import './transition.scss';
+@import './sidebar.scss';
+@import './view-ui.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'alibabaPuHuiTiL';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+aside {
+  background: #eef1f6;
+  padding: 8px 24px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  display: block;
+  line-height: 32px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    color: #337ab7;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
+
+//main-container全局样式
+.app-container {
+  padding: 20px;
+}
+
+.components-container {
+  margin: 30px 50px;
+  position: relative;
+}
+
+.pagination-container {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &.draft {
+    background: #d0d0d0;
+  }
+
+  &.deleted {
+    background: #d0d0d0;
+  }
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+.filter-container {
+  padding-bottom: 10px;
+
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+@font-face {
+  font-family: 'icon_hnkszx';
+  /* project id 1835487 */
+  src: url('//at.alicdn.com/t/font_1835487_b0gx82l2tw4.eot');
+  src: url('//at.alicdn.com/t/font_1835487_b0gx82l2tw4.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1835487_b0gx82l2tw4.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1835487_b0gx82l2tw4.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1835487_b0gx82l2tw4.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1835487_b0gx82l2tw4.svg#icon_hnkszx') format('svg');
+}
+
+.icon-0135 {
+  font-family: icon_hnkszx !important;
+  font-size: 14px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+* 搜索栏
+*/
+.el-form--inline .el-form-item__label {
+  float: none;
+  display: inline-block;
+  color: #909399;
+}
+
+.el-form .el-input.is-disabled .el-input__inner {
+  background-color: #F5F7FA;
+  border-color: #dfe4ed;
+  color: #000;
+  cursor: not-allowed;
+}
+
+
+/**自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 157, 160, 0.8);
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em
+}
+
+.tags-view-wrapper .el-scrollbar__wrap {
+  overflow: hidden;
+}
+
+.empty-image {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  display: inline-block;
+  background: url(~@/assets/images/empty_box.png) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+
+  &::after {
+    content: '开发中...';
+    color: #bec4ca;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10PX;
+    margin: auto;
+
+
+  }
+}
+
+.compents-panel .compents-selects .compent-layout .compent-area-panel .els-list>span:first-child {
+
+  &.grid-icon {
+    width: 100%;
+    background: url(~@/assets/images/icon_栅格布局.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.text-icon {
+    width: 100%;
+    background: url(~@/assets/images/文本框.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.select-icon {
+    width: 100%;
+    background: url(~@/assets/images/表单下拉选框.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.radio-icon {
+    width: 100%;
+    background: url(~@/assets/images/单选-选中.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.multiple-icon {
+    width: 100%;
+    background: url(~@/assets/images/多选-选中.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.textarea-icon {
+    width: 100%;
+    background: url(~@/assets/images/文本域.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.line-icon {
+    width: 100%;
+    background: url(~@/assets/images/图表-折线图.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.bar-icon {
+    width: 100%;
+    background: url(~@/assets/images/图表-柱状图.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.pie-icon {
+    width: 100%;
+    background: url(~@/assets/images/图表-饼图.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.map-icon {
+    width: 100%;
+    background: url(~@/assets/images/地图.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.graph-icon {
+    width: 100%;
+    background: url(~@/assets/images/关系图.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+
+  &.3dmap-icon {
+    width: 100%;
+    background: url(~@/assets/images/3D地图.png) no-repeat;
+    background-position: center;
+    background-size: 76%;
+  }
+}

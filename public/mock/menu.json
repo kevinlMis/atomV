@@ -1,0 +1,1915 @@
+{
+  "success":"true",
+  "data":[
+    {
+        "path":"/OMIM_HOMEPAGE",
+        "ssotype":"DMPOwner",
+        "children":[
+            {
+                "path":"/omim_common/views/WorkbenchPerson/index",
+                "ssotype":"DMPOwner",
+                "marker":"dashboard",
+                "name":"dashboard",
+                "node_icon":"grid",
+                "mytype":"page",
+                "showtype":"inner",
+                "href":"/omim_common/views/WorkbenchPerson/index",
+                "key":"1074378933144653824",
+                "meta":{
+                    "title":"工作台",
+                    "icon":"grid"
+                }
+            },
+            {
+                "path":"/OMIM_HOMEPAGE1074383896558178304",
+                "ssotype":"DMPOwner",
+                "children":[
+                    {
+                        "path":"/OMIM_HOMEPAGE1074421447104925696",
+                        "ssotype":"DMPOwner",
+                        "marker":"yizhangtu2",
+                        "name":"yizhangtu2",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"http://10.41.41.232:7080/system/embedIndex",
+                        "key":"1074421447104925696",
+                        "meta":{
+                            "title":"一张图2",
+                            "icon":"chart",
+                            "noCache":true
+                        }
+                    },
+                    {
+                        "path":"*",
+                        "redirect":"/404",
+                        "hidden":true
+                    }
+                ],
+                "marker":"InnerTest76",
+                "name":"一张图",
+                "node_icon":"chart",
+                "mytype":"group",
+                "showtype":"inner",
+                "href":"",
+                "key":"1074383896558178304",
+                "component":{
+                    "name":"AppMain",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-75d4ed18"
+                },
+                "meta":{
+                    "title":"一张图",
+                    "icon":"chart"
+                }
+            },
+            {
+                "path":"*",
+                "redirect":"/404",
+                "hidden":true
+            }
+        ],
+        "name":"首页",
+        "mytype":"project",
+        "showtype":"TreeMenu",
+        "key":"1074378551404269568",
+        "meta":{
+            "title":"首页",
+            "icon":"omim-homepage"
+        },
+        "alwaysShow":true,
+        "component":{
+            "name":"Layout",
+            "components":{
+                "Navbar":{
+                    "components":{
+                        "Hamburger":{
+                            "name":"Hamburger",
+                            "props":{
+                                "isActive":{
+                                    "default":false
+                                }
+                            },
+                            "computed":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-00362b7c"
+                        },
+                        "Logo":{
+                            "name":"SidebarLogo",
+                            "props":{
+                                "collapse":{
+                                    "required":true
+                                }
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-4ce33f06"
+                        },
+                        "navMenu":{
+                            "computed":{
+
+                            },
+                            "watch":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-4fb98ac9"
+                        }
+                    },
+                    "computed":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+                        null
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-9da4fb68"
+                },
+                "Sidebar":{
+                    "components":{
+                        "SidebarItem":{
+                            "name":"SidebarItem",
+                            "components":{
+                                "Item":{
+                                    "name":"MenuItem",
+                                    "functional":true,
+                                    "props":{
+                                        "icon":{
+                                            "default":""
+                                        },
+                                        "title":{
+                                            "default":""
+                                        }
+                                    }
+                                },
+                                "AppLink":{
+                                    "props":{
+                                        "to":{
+                                            "required":true
+                                        },
+                                        "query":{
+
+                                        },
+                                        "params":{
+
+                                        }
+                                    },
+                                    "methods":{
+
+                                    },
+                                    "staticRenderFns":[
+
+                                    ],
+                                    "_compiled":true
+                                },
+                                "AqscSubmenu":{
+                                    "name":"AqscSubmenu",
+                                    "componentName":"AqscSubmenu",
+                                    "components":{
+                                        "ElCollapseTransition":{
+                                            "name":"ElCollapseTransition",
+                                            "functional":true
+                                        }
+                                    },
+                                    "mixins":[
+                                        {
+                                            "inject":[
+                                                "rootMenu"
+                                            ],
+                                            "computed":{
+
+                                            }
+                                        },
+                                        {
+                                            "methods":{
+
+                                            }
+                                        },
+                                        {
+                                            "props":{
+                                                "transformOrigin":{
+                                                    "type":[
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "default":false
+                                                },
+                                                "offset":{
+                                                    "default":0
+                                                },
+                                                "boundariesPadding":{
+                                                    "default":5
+                                                },
+                                                "popperOptions":{
+
+                                                }
+                                            },
+                                            "methods":{
+
+                                            }
+                                        }
+                                    ],
+                                    "props":{
+                                        "index":{
+                                            "required":true
+                                        },
+                                        "showTimeout":{
+                                            "default":300
+                                        },
+                                        "hideTimeout":{
+                                            "default":300
+                                        },
+                                        "popperAppendToBody":{
+
+                                        }
+                                    },
+                                    "computed":{
+
+                                    },
+                                    "watch":{
+
+                                    },
+                                    "methods":{
+
+                                    }
+                                },
+                                "AqscMenuItem":{
+                                    "name":"AqscMenuItem",
+                                    "componentName":"AqscMenuItem",
+                                    "mixins":[
+                                        {
+                                            "inject":[
+                                                "rootMenu"
+                                            ],
+                                            "computed":{
+
+                                            }
+                                        },
+                                        {
+                                            "methods":{
+
+                                            }
+                                        }
+                                    ],
+                                    "props":{
+                                        "index":{
+                                            "default":null
+                                        },
+                                        "route":[
+                                            null,
+                                            null
+                                        ]
+                                    },
+                                    "computed":{
+
+                                    },
+                                    "methods":{
+
+                                    },
+                                    "staticRenderFns":[
+
+                                    ],
+                                    "_compiled":true
+                                },
+                                "AqscMenu":{
+                                    "name":"AqscMenu",
+                                    "components":{
+                                        "el-menu-collapse-transition":{
+                                            "functional":true
+                                        }
+                                    },
+                                    "mixins":[
+                                        {
+                                            "methods":{
+
+                                            }
+                                        },
+                                        {
+                                            "methods":{
+
+                                            }
+                                        }
+                                    ],
+                                    "props":{
+                                        "mode":{
+                                            "default":"vertical"
+                                        },
+                                        "defaultActive":{
+                                            "default":""
+                                        },
+                                        "menuTrigger":{
+                                            "default":"hover"
+                                        },
+                                        "collapseTransition":{
+                                            "default":true
+                                        }
+                                    },
+                                    "computed":{
+
+                                    },
+                                    "watch":{
+
+                                    },
+                                    "methods":{
+
+                                    },
+                                    "componentName":"AqscMenu"
+                                }
+                            },
+                            "mixins":[
+                                {
+                                    "computed":{
+
+                                    },
+                                    "methods":{
+
+                                    }
+                                }
+                            ],
+                            "props":{
+                                "item":{
+                                    "required":true
+                                },
+                                "isNest":{
+                                    "default":false
+                                },
+                                "basePath":{
+                                    "default":""
+                                }
+                            },
+                            "computed":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true
+                        },
+                        "AqscMenu":{
+                            "name":"AqscMenu",
+                            "components":{
+                                "el-menu-collapse-transition":{
+                                    "functional":true
+                                }
+                            },
+                            "mixins":[
+                                {
+                                    "methods":{
+
+                                    }
+                                },
+                                {
+                                    "methods":{
+
+                                    }
+                                }
+                            ],
+                            "props":{
+                                "mode":{
+                                    "default":"vertical"
+                                },
+                                "defaultActive":{
+                                    "default":""
+                                },
+                                "menuTrigger":{
+                                    "default":"hover"
+                                },
+                                "collapseTransition":{
+                                    "default":true
+                                }
+                            },
+                            "computed":{
+
+                            },
+                            "watch":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "componentName":"AqscMenu"
+                        }
+                    },
+                    "computed":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true
+                },
+                "AppMain":{
+                    "name":"AppMain",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-75d4ed18"
+                },
+                "TagsView":{
+                    "components":{
+                        "ScrollPane":{
+                            "name":"ScrollPane",
+                            "computed":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-3a20f2e2"
+                        }
+                    },
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-4b95e955"
+                },
+                "Help":{
+                    "name":"Help",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-52329d2a"
+                }
+            },
+            "mixins":[
+                {
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    }
+                }
+            ],
+            "computed":{
+
+            },
+            "methods":{
+
+            },
+            "staticRenderFns":[
+
+            ],
+            "_compiled":true,
+            "_scopeId":"data-v-250f95cc"
+        }
+    },
+    {
+        "path":"/DailyWork",
+        "ssotype":"DMPOwner",
+        "children":[
+            {
+                "path":"/DailyWork961568715214688256",
+                "ssotype":"DMPOwner",
+                "children":[
+                    {
+                        "path":"index.vue",
+                        "ssotype":"DMPOwner",
+                        "marker":"WorkTaskIndex",
+                        "name":"WorkTaskIndex",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/dailywork/views/worktask/index.vue",
+                        "key":"961568953216274432",
+                        "meta":{
+                            "title":"工作任务",
+                            "icon":"chart"
+                        }
+                    },
+                    {
+                        "path":"meeting.vue",
+                        "ssotype":"",
+                        "marker":"Meeting",
+                        "name":"Meeting",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/dailywork/views/meeting/meeting.vue",
+                        "key":"972186618825805824",
+                        "meta":{
+                            "title":"生产调度会议",
+                            "icon":"chart"
+                        }
+                    },
+                    {
+                        "path":"worklogindex.vue",
+                        "ssotype":"DMPOwner",
+                        "marker":"worklog",
+                        "name":"worklog",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/dailywork/views/worklog/worklogindex.vue",
+                        "key":"975047384285319168",
+                        "meta":{
+                            "title":"工作日志",
+                            "icon":"chart"
+                        }
+                    },
+                    {
+                        "path":"worklogtaskref.vue",
+                        "ssotype":"",
+                        "marker":"worklogtaskref",
+                        "name":"worklogtaskref",
+                        "node_icon":"",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/dailywork/views/worklogtaskref/worklogtaskref.vue",
+                        "key":"975410636970266624",
+                        "meta":{
+                            "title":"工作日志查询",
+                            "icon":""
+                        }
+                    },
+                    {
+                        "path":"statindex.vue",
+                        "ssotype":"DMPOwner",
+                        "marker":"StatIndex",
+                        "name":"StatIndex",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/dailywork/views/worktaskstat/statindex.vue",
+                        "key":"973946465606963200",
+                        "meta":{
+                            "title":"工作任务统计",
+                            "icon":"chart"
+                        }
+                    },
+                    {
+                        "path":"workRuleIndex.vue",
+                        "ssotype":"DMPOwner",
+                        "marker":"RuleWorkTask",
+                        "name":"RuleWorkTask",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/dailywork/views/workrule/workRuleIndex.vue",
+                        "key":"961985081772085248",
+                        "meta":{
+                            "title":"定期工作任务规则",
+                            "icon":"chart"
+                        }
+                    },
+                    {
+                        "path":"standardLibrary.vue",
+                        "ssotype":"",
+                        "marker":"standardLibrary",
+                        "name":"standardLibrary",
+                        "node_icon":"",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/dailywork/views/standardLibrary/standardLibrary.vue",
+                        "key":"973903647152803840",
+                        "meta":{
+                            "title":"个人标准库",
+                            "icon":""
+                        }
+                    },
+                    {
+                        "path":"*",
+                        "redirect":"/404",
+                        "hidden":true
+                    }
+                ],
+                "marker":"",
+                "name":"任务管理",
+                "node_icon":"",
+                "mytype":"group",
+                "showtype":"",
+                "href":"",
+                "key":"961568715214688256",
+                "component":{
+                    "name":"AppMain",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-75d4ed18"
+                },
+                "meta":{
+                    "title":"任务管理",
+                    "icon":""
+                }
+            },
+            {
+                "path":"*",
+                "redirect":"/404",
+                "hidden":true
+            }
+        ],
+        "name":"日常工作",
+        "mytype":"project",
+        "showtype":"TreeMenu",
+        "key":"220",
+        "meta":{
+            "title":"日常工作",
+            "icon":"dailywork"
+        },
+        "alwaysShow":true,
+        "component":{
+            "name":"Layout",
+            "components":{
+                "Navbar":{
+                    "components":{
+                        "Hamburger":{
+                            "name":"Hamburger",
+                            "props":{
+                                "isActive":{
+                                    "default":false
+                                }
+                            },
+                            "computed":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-00362b7c"
+                        },
+                        "Logo":{
+                            "name":"SidebarLogo",
+                            "props":{
+                                "collapse":{
+                                    "required":true
+                                }
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-4ce33f06"
+                        },
+                        "navMenu":{
+                            "computed":{
+
+                            },
+                            "watch":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-4fb98ac9"
+                        }
+                    },
+                    "computed":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+                        null
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-9da4fb68"
+                },
+                "Sidebar":{
+                    "components":{
+                        "SidebarItem":{
+                            "name":"SidebarItem",
+                            "components":{
+                                "Item":{
+                                    "name":"MenuItem",
+                                    "functional":true,
+                                    "props":{
+                                        "icon":{
+                                            "default":""
+                                        },
+                                        "title":{
+                                            "default":""
+                                        }
+                                    }
+                                },
+                                "AppLink":{
+                                    "props":{
+                                        "to":{
+                                            "required":true
+                                        },
+                                        "query":{
+
+                                        },
+                                        "params":{
+
+                                        }
+                                    },
+                                    "methods":{
+
+                                    },
+                                    "staticRenderFns":[
+
+                                    ],
+                                    "_compiled":true
+                                },
+                                "AqscSubmenu":{
+                                    "name":"AqscSubmenu",
+                                    "componentName":"AqscSubmenu",
+                                    "components":{
+                                        "ElCollapseTransition":{
+                                            "name":"ElCollapseTransition",
+                                            "functional":true
+                                        }
+                                    },
+                                    "mixins":[
+                                        {
+                                            "inject":[
+                                                "rootMenu"
+                                            ],
+                                            "computed":{
+
+                                            }
+                                        },
+                                        {
+                                            "methods":{
+
+                                            }
+                                        },
+                                        {
+                                            "props":{
+                                                "transformOrigin":{
+                                                    "type":[
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "default":false
+                                                },
+                                                "offset":{
+                                                    "default":0
+                                                },
+                                                "boundariesPadding":{
+                                                    "default":5
+                                                },
+                                                "popperOptions":{
+
+                                                }
+                                            },
+                                            "methods":{
+
+                                            }
+                                        }
+                                    ],
+                                    "props":{
+                                        "index":{
+                                            "required":true
+                                        },
+                                        "showTimeout":{
+                                            "default":300
+                                        },
+                                        "hideTimeout":{
+                                            "default":300
+                                        },
+                                        "popperAppendToBody":{
+
+                                        }
+                                    },
+                                    "computed":{
+
+                                    },
+                                    "watch":{
+
+                                    },
+                                    "methods":{
+
+                                    }
+                                },
+                                "AqscMenuItem":{
+                                    "name":"AqscMenuItem",
+                                    "componentName":"AqscMenuItem",
+                                    "mixins":[
+                                        {
+                                            "inject":[
+                                                "rootMenu"
+                                            ],
+                                            "computed":{
+
+                                            }
+                                        },
+                                        {
+                                            "methods":{
+
+                                            }
+                                        }
+                                    ],
+                                    "props":{
+                                        "index":{
+                                            "default":null
+                                        },
+                                        "route":[
+                                            null,
+                                            null
+                                        ]
+                                    },
+                                    "computed":{
+
+                                    },
+                                    "methods":{
+
+                                    },
+                                    "staticRenderFns":[
+
+                                    ],
+                                    "_compiled":true
+                                },
+                                "AqscMenu":{
+                                    "name":"AqscMenu",
+                                    "components":{
+                                        "el-menu-collapse-transition":{
+                                            "functional":true
+                                        }
+                                    },
+                                    "mixins":[
+                                        {
+                                            "methods":{
+
+                                            }
+                                        },
+                                        {
+                                            "methods":{
+
+                                            }
+                                        }
+                                    ],
+                                    "props":{
+                                        "mode":{
+                                            "default":"vertical"
+                                        },
+                                        "defaultActive":{
+                                            "default":""
+                                        },
+                                        "menuTrigger":{
+                                            "default":"hover"
+                                        },
+                                        "collapseTransition":{
+                                            "default":true
+                                        }
+                                    },
+                                    "computed":{
+
+                                    },
+                                    "watch":{
+
+                                    },
+                                    "methods":{
+
+                                    },
+                                    "componentName":"AqscMenu"
+                                }
+                            },
+                            "mixins":[
+                                {
+                                    "computed":{
+
+                                    },
+                                    "methods":{
+
+                                    }
+                                }
+                            ],
+                            "props":{
+                                "item":{
+                                    "required":true
+                                },
+                                "isNest":{
+                                    "default":false
+                                },
+                                "basePath":{
+                                    "default":""
+                                }
+                            },
+                            "computed":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true
+                        },
+                        "AqscMenu":{
+                            "name":"AqscMenu",
+                            "components":{
+                                "el-menu-collapse-transition":{
+                                    "functional":true
+                                }
+                            },
+                            "mixins":[
+                                {
+                                    "methods":{
+
+                                    }
+                                },
+                                {
+                                    "methods":{
+
+                                    }
+                                }
+                            ],
+                            "props":{
+                                "mode":{
+                                    "default":"vertical"
+                                },
+                                "defaultActive":{
+                                    "default":""
+                                },
+                                "menuTrigger":{
+                                    "default":"hover"
+                                },
+                                "collapseTransition":{
+                                    "default":true
+                                }
+                            },
+                            "computed":{
+
+                            },
+                            "watch":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "componentName":"AqscMenu"
+                        }
+                    },
+                    "computed":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true
+                },
+                "AppMain":{
+                    "name":"AppMain",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-75d4ed18"
+                },
+                "TagsView":{
+                    "components":{
+                        "ScrollPane":{
+                            "name":"ScrollPane",
+                            "computed":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-3a20f2e2"
+                        }
+                    },
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-4b95e955"
+                },
+                "Help":{
+                    "name":"Help",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-52329d2a"
+                }
+            },
+            "mixins":[
+                {
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    }
+                }
+            ],
+            "computed":{
+
+            },
+            "methods":{
+
+            },
+            "staticRenderFns":[
+
+            ],
+            "_compiled":true,
+            "_scopeId":"data-v-250f95cc"
+        }
+    },
+    {
+        "path":"/OMIM_EQUIP",
+        "ssotype":"DMPOwner",
+        "children":[
+            {
+                "path":"/OMIM_EQUIP1116657472178751488",
+                "ssotype":"",
+                "children":[
+                    {
+                        "path":"/OMIM_EQUIP1116661293621708800",
+                        "ssotype":"DMPOwner",
+                        "marker":"ywHomePage",
+                        "name":"ywHomePage",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"http://112.35.161.16:8090/tempo/publish/show/80384370fffa400596561930b0f5ec54/bc08052163124830893d4afd6972c1c4",
+                        "key":"1116661293621708800",
+                        "meta":{
+                            "title":"二级首页",
+                            "icon":"chart",
+                            "noCache":true
+                        }
+                    },
+                    {
+                        "path":"*",
+                        "redirect":"/404",
+                        "hidden":true
+                    }
+                ],
+                "marker":"",
+                "name":"二级首页",
+                "node_icon":"grid",
+                "mytype":"group",
+                "showtype":"",
+                "href":"",
+                "key":"1116657472178751488",
+                "component":{
+                    "name":"AppMain",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-75d4ed18"
+                },
+                "meta":{
+                    "title":"二级首页",
+                    "icon":"grid"
+                }
+            },
+            {
+                "path":"/OMIM_EQUIP1065557968470151168",
+                "ssotype":"DMPOwner",
+                "children":[
+                    {
+                        "path":"equipinfo",
+                        "ssotype":"DMPOwner",
+                        "marker":"tpridmpCommonEquipmentmanager",
+                        "name":"tpridmpCommonEquipmentmanager",
+                        "node_icon":"grid",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"/omim_equip/views/equipinfo",
+                        "key":"1052548390820253696",
+                        "meta":{
+                            "title":"设备管理",
+                            "icon":"grid"
+                        }
+                    },
+                    {
+                        "path":"truckmang",
+                        "ssotype":"DMPOwner",
+                        "marker":"truckMang",
+                        "name":"truckMang",
+                        "node_icon":"grid",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"/omim_equip/views/truckmang",
+                        "key":"1055488642878803968",
+                        "meta":{
+                            "title":"卡车管理",
+                            "icon":"grid"
+                        }
+                    },
+                    {
+                        "path":"elcshvmang",
+                        "ssotype":"",
+                        "marker":"elcshvMang",
+                        "name":"elcshvMang",
+                        "node_icon":"grid",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"/omim_equip/views/elcshvmang",
+                        "key":"1055488923033145344",
+                        "meta":{
+                            "title":"电铲管理",
+                            "icon":"grid"
+                        }
+                    },
+                    {
+                        "path":"assistvehicle",
+                        "ssotype":"DMPOwner",
+                        "marker":"EqaiDvehicleIndex",
+                        "name":"EqaiDvehicleIndex",
+                        "node_icon":"grid",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/omim_equip/views/assistvehicle",
+                        "key":"1055050002205773824",
+                        "meta":{
+                            "title":"辅助车辆管理",
+                            "icon":"grid"
+                        }
+                    },
+                    {
+                        "path":"*",
+                        "redirect":"/404",
+                        "hidden":true
+                    }
+                ],
+                "marker":"",
+                "name":"设备台账",
+                "node_icon":"grid",
+                "mytype":"group",
+                "showtype":"",
+                "href":"",
+                "key":"1065557968470151168",
+                "component":{
+                    "name":"AppMain",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-75d4ed18"
+                },
+                "meta":{
+                    "title":"设备台账",
+                    "icon":"grid"
+                }
+            },
+            {
+                "path":"/OMIM_EQUIP1081220753401057280",
+                "ssotype":"",
+                "children":[
+                    {
+                        "path":"equipMaintenanceRepositoryIndex",
+                        "ssotype":"",
+                        "marker":"EquipMaintenanceRepository",
+                        "name":"EquipMaintenanceRepository",
+                        "node_icon":"grid",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/omim_equip/views/equipMaintenanceRepository/equipMaintenanceRepositoryIndex",
+                        "key":"1081220928467111936",
+                        "meta":{
+                            "title":"设备维修专家知识库",
+                            "icon":"grid"
+                        }
+                    },
+                    {
+                        "path":"faultTypeIndex",
+                        "ssotype":"",
+                        "marker":"FaultType",
+                        "name":"FaultType",
+                        "node_icon":"grid",
+                        "mytype":"page",
+                        "showtype":"",
+                        "href":"/omim_equip/views/faultType/faultTypeIndex",
+                        "key":"1081221191605161984",
+                        "meta":{
+                            "title":"缺陷故障类型",
+                            "icon":"grid"
+                        }
+                    },
+                    {
+                        "path":"echalVehicleIndex",
+                        "ssotype":"DMPOwner",
+                        "marker":"echalVehicle",
+                        "name":"echalVehicle",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"/omim_equip/views/echalVehicle/echalVehicleIndex",
+                        "key":"1103248017068132352",
+                        "meta":{
+                            "title":"机电科车辆部位",
+                            "icon":"chart"
+                        }
+                    },
+                    {
+                        "path":"*",
+                        "redirect":"/404",
+                        "hidden":true
+                    }
+                ],
+                "marker":"",
+                "name":"日常维修",
+                "node_icon":"grid",
+                "mytype":"group",
+                "showtype":"",
+                "href":"",
+                "key":"1081220753401057280",
+                "component":{
+                    "name":"AppMain",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-75d4ed18"
+                },
+                "meta":{
+                    "title":"日常维修",
+                    "icon":"grid"
+                }
+            },
+            {
+                "path":"/OMIM_EQUIP1103709119677728768",
+                "ssotype":"DMPOwner",
+                "children":[
+                    {
+                        "path":"inventoryquery.vue",
+                        "ssotype":"DMPOwner",
+                        "marker":"Inventoryquery",
+                        "name":"Inventoryquery",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"/omim_equip/views/material/inventoryquery/inventoryquery.vue",
+                        "key":"1103709254600099840",
+                        "meta":{
+                            "title":"车间库存查询",
+                            "icon":"chart"
+                        }
+                    },
+                    {
+                        "path":"indepot",
+                        "ssotype":"DMPOwner",
+                        "marker":"indepot",
+                        "name":"indepot",
+                        "node_icon":"grid",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"/omim_equip/views/indepot",
+                        "key":"1105800262842320896",
+                        "meta":{
+                            "title":"车间库存入库管理",
+                            "icon":"grid"
+                        }
+                    },
+                    {
+                        "path":"outdepot",
+                        "ssotype":"DMPOwner",
+                        "marker":"outdepot",
+                        "name":"outdepot",
+                        "node_icon":"grid",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"/omim_equip/views/outdepot",
+                        "key":"1105800426122381312",
+                        "meta":{
+                            "title":"车间库存出库管理",
+                            "icon":"grid"
+                        }
+                    },
+                    {
+                        "path":"jxjob.vue",
+                        "ssotype":"DMPOwner",
+                        "marker":"Jxjob",
+                        "name":"Jxjob",
+                        "node_icon":"chart",
+                        "mytype":"page",
+                        "showtype":"inner",
+                        "href":"/omim_equip/views/material/jxjob/jxjob.vue",
+                        "key":"1103709414843484160",
+                        "meta":{
+                            "title":"检修工单",
+                            "icon":"chart"
+                        }
+                    },
+                    {
+                        "path":"*",
+                        "redirect":"/404",
+                        "hidden":true
+                    }
+                ],
+                "marker":"",
+                "name":"维修部物资管理",
+                "node_icon":"chart",
+                "mytype":"group",
+                "showtype":"inner",
+                "href":"",
+                "key":"1103709119677728768",
+                "component":{
+                    "name":"AppMain",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-75d4ed18"
+                },
+                "meta":{
+                    "title":"维修部物资管理",
+                    "icon":"chart"
+                }
+            },
+            {
+                "path":"*",
+                "redirect":"/404",
+                "hidden":true
+            }
+        ],
+        "name":"设备管控",
+        "mytype":"project",
+        "showtype":"TreeMenu",
+        "key":"1052542760067796992",
+        "meta":{
+            "title":"设备管控",
+            "icon":"omim-equip"
+        },
+        "alwaysShow":true,
+        "component":{
+            "name":"Layout",
+            "components":{
+                "Navbar":{
+                    "components":{
+                        "Hamburger":{
+                            "name":"Hamburger",
+                            "props":{
+                                "isActive":{
+                                    "default":false
+                                }
+                            },
+                            "computed":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-00362b7c"
+                        },
+                        "Logo":{
+                            "name":"SidebarLogo",
+                            "props":{
+                                "collapse":{
+                                    "required":true
+                                }
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-4ce33f06"
+                        },
+                        "navMenu":{
+                            "computed":{
+
+                            },
+                            "watch":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-4fb98ac9"
+                        }
+                    },
+                    "computed":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+                        null
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-9da4fb68"
+                },
+                "Sidebar":{
+                    "components":{
+                        "SidebarItem":{
+                            "name":"SidebarItem",
+                            "components":{
+                                "Item":{
+                                    "name":"MenuItem",
+                                    "functional":true,
+                                    "props":{
+                                        "icon":{
+                                            "default":""
+                                        },
+                                        "title":{
+                                            "default":""
+                                        }
+                                    }
+                                },
+                                "AppLink":{
+                                    "props":{
+                                        "to":{
+                                            "required":true
+                                        },
+                                        "query":{
+
+                                        },
+                                        "params":{
+
+                                        }
+                                    },
+                                    "methods":{
+
+                                    },
+                                    "staticRenderFns":[
+
+                                    ],
+                                    "_compiled":true
+                                },
+                                "AqscSubmenu":{
+                                    "name":"AqscSubmenu",
+                                    "componentName":"AqscSubmenu",
+                                    "components":{
+                                        "ElCollapseTransition":{
+                                            "name":"ElCollapseTransition",
+                                            "functional":true
+                                        }
+                                    },
+                                    "mixins":[
+                                        {
+                                            "inject":[
+                                                "rootMenu"
+                                            ],
+                                            "computed":{
+
+                                            }
+                                        },
+                                        {
+                                            "methods":{
+
+                                            }
+                                        },
+                                        {
+                                            "props":{
+                                                "transformOrigin":{
+                                                    "type":[
+                                                        null,
+                                                        null
+                                                    ],
+                                                    "default":false
+                                                },
+                                                "offset":{
+                                                    "default":0
+                                                },
+                                                "boundariesPadding":{
+                                                    "default":5
+                                                },
+                                                "popperOptions":{
+
+                                                }
+                                            },
+                                            "methods":{
+
+                                            }
+                                        }
+                                    ],
+                                    "props":{
+                                        "index":{
+                                            "required":true
+                                        },
+                                        "showTimeout":{
+                                            "default":300
+                                        },
+                                        "hideTimeout":{
+                                            "default":300
+                                        },
+                                        "popperAppendToBody":{
+
+                                        }
+                                    },
+                                    "computed":{
+
+                                    },
+                                    "watch":{
+
+                                    },
+                                    "methods":{
+
+                                    }
+                                },
+                                "AqscMenuItem":{
+                                    "name":"AqscMenuItem",
+                                    "componentName":"AqscMenuItem",
+                                    "mixins":[
+                                        {
+                                            "inject":[
+                                                "rootMenu"
+                                            ],
+                                            "computed":{
+
+                                            }
+                                        },
+                                        {
+                                            "methods":{
+
+                                            }
+                                        }
+                                    ],
+                                    "props":{
+                                        "index":{
+                                            "default":null
+                                        },
+                                        "route":[
+                                            null,
+                                            null
+                                        ]
+                                    },
+                                    "computed":{
+
+                                    },
+                                    "methods":{
+
+                                    },
+                                    "staticRenderFns":[
+
+                                    ],
+                                    "_compiled":true
+                                },
+                                "AqscMenu":{
+                                    "name":"AqscMenu",
+                                    "components":{
+                                        "el-menu-collapse-transition":{
+                                            "functional":true
+                                        }
+                                    },
+                                    "mixins":[
+                                        {
+                                            "methods":{
+
+                                            }
+                                        },
+                                        {
+                                            "methods":{
+
+                                            }
+                                        }
+                                    ],
+                                    "props":{
+                                        "mode":{
+                                            "default":"vertical"
+                                        },
+                                        "defaultActive":{
+                                            "default":""
+                                        },
+                                        "menuTrigger":{
+                                            "default":"hover"
+                                        },
+                                        "collapseTransition":{
+                                            "default":true
+                                        }
+                                    },
+                                    "computed":{
+
+                                    },
+                                    "watch":{
+
+                                    },
+                                    "methods":{
+
+                                    },
+                                    "componentName":"AqscMenu"
+                                }
+                            },
+                            "mixins":[
+                                {
+                                    "computed":{
+
+                                    },
+                                    "methods":{
+
+                                    }
+                                }
+                            ],
+                            "props":{
+                                "item":{
+                                    "required":true
+                                },
+                                "isNest":{
+                                    "default":false
+                                },
+                                "basePath":{
+                                    "default":""
+                                }
+                            },
+                            "computed":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true
+                        },
+                        "AqscMenu":{
+                            "name":"AqscMenu",
+                            "components":{
+                                "el-menu-collapse-transition":{
+                                    "functional":true
+                                }
+                            },
+                            "mixins":[
+                                {
+                                    "methods":{
+
+                                    }
+                                },
+                                {
+                                    "methods":{
+
+                                    }
+                                }
+                            ],
+                            "props":{
+                                "mode":{
+                                    "default":"vertical"
+                                },
+                                "defaultActive":{
+                                    "default":""
+                                },
+                                "menuTrigger":{
+                                    "default":"hover"
+                                },
+                                "collapseTransition":{
+                                    "default":true
+                                }
+                            },
+                            "computed":{
+
+                            },
+                            "watch":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "componentName":"AqscMenu"
+                        }
+                    },
+                    "computed":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true
+                },
+                "AppMain":{
+                    "name":"AppMain",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-75d4ed18"
+                },
+                "TagsView":{
+                    "components":{
+                        "ScrollPane":{
+                            "name":"ScrollPane",
+                            "computed":{
+
+                            },
+                            "methods":{
+
+                            },
+                            "staticRenderFns":[
+
+                            ],
+                            "_compiled":true,
+                            "_scopeId":"data-v-3a20f2e2"
+                        }
+                    },
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-4b95e955"
+                },
+                "Help":{
+                    "name":"Help",
+                    "computed":{
+
+                    },
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    },
+                    "staticRenderFns":[
+
+                    ],
+                    "_compiled":true,
+                    "_scopeId":"data-v-52329d2a"
+                }
+            },
+            "mixins":[
+                {
+                    "watch":{
+
+                    },
+                    "methods":{
+
+                    }
+                }
+            ],
+            "computed":{
+
+            },
+            "methods":{
+
+            },
+            "staticRenderFns":[
+
+            ],
+            "_compiled":true,
+            "_scopeId":"data-v-250f95cc"
+        }
+    },
+    {
+        "path":"*",
+        "redirect":"/404",
+        "hidden":true
+    }
+],
+  "message" : "登录成功！"
+}

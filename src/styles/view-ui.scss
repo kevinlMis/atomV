@@ -1,0 +1,184 @@
+/*
+* 自定义覆盖UI全局应用样式，禁止使用important设置权重
+*/
+
+@font-face {
+  font-family: 'alibabaPuHuiTiL';
+  font-display: swap;
+  src: url(~@/assets/fonts/AlibabaPuHuiTiL.ttf) format('truetype');
+  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+.mui-btn,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  font-weight: 400;
+  height: 36px;
+  line-height: 24px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+
+.mui-content {
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+li {
+  list-style: none;
+}
+
+
+.mui-pull-caption {
+  line-height: 24px;
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+/*----mui.showLoading-start----*/
+.mui-show-loading {
+  position: fixed;
+  padding: 5px;
+  width: 120px;
+  min-height: 120px;
+  top: 40%;
+  left: calc(50% - 60px);
+  background: transparent;
+  text-align: center;
+  border-radius: 5px;
+  color: #FFFFFF;
+  visibility: hidden;
+  z-index: 2000;
+}
+
+.mui-show-loading.loading-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mui-show-loading .mui-spinner {
+  width: 36px;
+  height: 36px;
+}
+
+.mui-show-loading .text {
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 10px 0 0;
+  color: #7872F9;
+  opacity: 0.8;
+}
+
+.mui-show-loading-mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.mui-show-loading-mask-hidden {
+  display: none;
+}
+
+.mui-spinner-loading {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mui-spinner-loading span {
+  display: inline-block;
+  width: 8PX;
+  height: 8PX;
+  border-radius: 50%;
+  background: #7872F9;
+  position: absolute;
+  animation: load 1.04s ease infinite;
+  -webkit-animation: load 1.04s ease infinite;
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/*笛卡尔坐标系*/
+.mui-spinner-loading span:nth-child(1) {
+  left: 0;
+  top: 50%;
+  margin-top: -4px;
+  animation-delay: 0.13s;
+  -webkit-animation-delay: 0.13s;
+}
+
+.mui-spinner-loading span:nth-child(2) {
+  left: 6px;
+  top: 6px;
+  animation-delay: 0.26s;
+  -webkit-animation-delay: 0.26s;
+}
+
+.mui-spinner-loading span:nth-child(3) {
+  left: 50%;
+  top: 0;
+  margin-left: -4px;
+  animation-delay: 0.39s;
+  -webkit-animation-delay: 0.39s;
+}
+
+.mui-spinner-loading span:nth-child(4) {
+  top: 6px;
+  right: 6px;
+  animation-delay: 0.52s;
+  -webkit-animation-delay: 0.52s;
+}
+
+.mui-spinner-loading span:nth-child(5) {
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
+  animation-delay: 0.65s;
+  -webkit-animation-delay: 0.65s;
+}
+
+.mui-spinner-loading span:nth-child(6) {
+  bottom: 6px;
+  right: 6px;
+  animation-delay: 0.78s;
+  -webkit-animation-delay: 0.78s;
+}
+
+.mui-spinner-loading span:nth-child(7) {
+  bottom: 0;
+  left: 50%;
+  margin-left: -4px;
+  animation-delay: 0.91s;
+  -webkit-animation-delay: 0.91s;
+}
+
+.mui-spinner-loading span:nth-child(8) {
+  bottom: 6px;
+  left: 6px;
+  animation-delay: 1.04s;
+  -webkit-animation-delay: 1.04s;
+}
+
+/*---mui.showLoading-end---*/

@@ -1,0 +1,513 @@
+.mui-content {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .operation-panel {
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+    background-color: #52575A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      width: 50%;
+      height: 100%;
+      padding: 0 5px;
+
+      span {
+        width: 25px;
+        height: 100%;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+    }
+
+    .panel-l {
+      .lock-icon {
+        background: url(~@/assets/images/锁定.png) no-repeat;
+        background-position: center;
+        background-size: 100%;
+
+        &:hover {
+          background: url(~@/assets/images/锁定_actived.png) no-repeat;
+          background-position: center;
+          background-size: 100%;
+        }
+      }
+
+      .unlock-icon {
+        background: url(~@/assets/images/解锁.png) no-repeat;
+        background-position: center;
+        background-size: 100%;
+
+        &:hover {
+          background: url(~@/assets/images/解锁_actived.png) no-repeat;
+          background-position: center;
+          background-size: 100%;
+        }
+      }
+
+      .save-icon {
+        background: url(~@/assets/images/保存.png) no-repeat;
+        background-position: center;
+        background-size: 91%;
+
+        &:hover {
+          background: url(~@/assets/images/保存_actived.png) no-repeat;
+          background-position: center;
+          background-size: 91%;
+        }
+      }
+
+      .preview-icon {
+        background: url(~@/assets/images/预览.png) no-repeat;
+        background-position: center;
+        background-size: 81%;
+
+        &:hover {
+          background: url(~@/assets/images/预览_actived.png) no-repeat;
+          background-position: center;
+          background-size: 81%;
+        }
+      }
+
+      .publish-icon {
+        background: url(~@/assets/images/icon_发布.png) no-repeat;
+        background-position: center;
+        background-size: 100%;
+      }
+    }
+
+    .panel-r {
+      .desktop-icon {
+        background: url(~@/assets/images/电脑.png) no-repeat;
+        background-position: center;
+        background-size: 90%;
+
+        &:hover {
+          background: url(~@/assets/images/电脑.png) no-repeat;
+          background-position: center;
+          background-size: 90%;
+        }
+      }
+
+      .phone-icon {
+        background: url(~@/assets/images/移动端.png) no-repeat;
+        background-position: center;
+        background-size: 90%;
+
+        &:hover {
+          background: url(~@/assets/images/移动端.png) no-repeat;
+          background-position: center;
+          background-size: 90%;
+        }
+      }
+    }
+
+    &>div:first-child {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &>div:last-child {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .main-contetn {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .content-left {
+      width: 270px;
+      height: 100%;
+      background-color: #393D40;
+    }
+
+    .content-center {
+      flex: 1;
+      min-width: 400px;
+      height: 100%;
+      background-color: rgba(223, 225, 229, 1);
+      background-image: radial-gradient(#FFFFFF 12%, transparent 9%), radial-gradient(#FFFFFF 7%, transparent 9%);
+      -webkit-background-image: radial-gradient(#FFFFFF 12%, transparent 9%), radial-gradient(#FFFFFF 7%, transparent 9%);
+      background-position: 0px 0px, 6px 18px;
+      background-size: 12px 12px;
+    }
+
+    .content-right {
+      width: 250px;
+      height: 100%;
+      background-color: #393D40;
+    }
+
+
+    .mui-scroll {
+      padding: 20px 20px;
+      transform: initial;
+    }
+
+    .ym-telephone-service {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      div {
+        width: 100%;
+        height: 32px;
+
+        &.service-top {
+          margin-bottom: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          .tel-number {
+            width: 290px;
+            height: 32px;
+            border-radius: 16px;
+            border: solid 1px rgba(37, 37, 37, 0.6);
+            // margin-right: 10px;
+            padding: 10px 0px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 12px;
+            letter-spacing: 0px;
+            color: rgba(1, 1, 5, 0.8);
+          }
+
+          .tel-messgage {
+            width: 136px;
+            height: 32px;
+            border-radius: 16px;
+            border: solid 1px rgba(37, 37, 37, 0.6);
+            padding: 10px 32px 10px 0px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 12px;
+            letter-spacing: 0px;
+            color: rgba(1, 1, 5, 0.8);
+            position: relative;
+            overflow: initial;
+
+
+            i {
+              display: inline-block;
+              width: 32px;
+              height: 32px;
+              position: absolute;
+              right: -2px;
+              top: -1px;
+              bottom: 0;
+
+              font {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 10px;
+                text-align: center;
+                color: #7872F9;
+              }
+            }
+          }
+
+        }
+
+        &.service-bottom {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .today-order {
+            width: 90px;
+            height: 32px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            border: solid 1px rgba(37, 37, 37, 0.6);
+            padding: 9px 0;
+            font-size: 12px;
+            line-height: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: rgba(1, 1, 5, 0.8);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            span {
+              height: 100%;
+              font-weight: 600;
+
+              &::after {
+                content: '';
+                margin-left: 3px;
+                width: 1PX;
+                height: 17px;
+                margin-top: -15px;
+                margin-bottom: -12px;
+                vertical-align: middle;
+                display: inline-block;
+                background-color: #252525;
+              }
+
+            }
+
+            font {
+              height: 100%;
+              color: #7E8EBB;
+
+              &::before {
+                content: '';
+                margin-left: 3px;
+              }
+            }
+
+          }
+        }
+      }
+
+
+    }
+
+    .ym-coal-stripping {
+      width: 100%;
+      height: 182px;
+      padding: 0px 33px;
+      margin: 35px 0 33px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &>div {
+        width: 110px;
+        height: 100%;
+
+        &.coal-left,
+        &.strip-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          span {
+            width: 100%;
+            height: 17px;
+            line-height: 17px;
+            font-size: 17px;
+            color: rgba(1, 1, 5, 0.8);
+            text-align: center;
+          }
+
+          .chart-content {
+            flex: 1;
+            position: relative;
+
+            .legend-fort {
+              width: 100%;
+              height: 26px;
+              position: absolute;
+              top: calc(50% - 20px);
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .leg-title {
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 12px;
+                letter-spacing: 0px;
+                text-align: center;
+                color: #010101;
+
+                &::before {
+                  content: '';
+                  margin-right: 4px;
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 50%;
+                  margin-top: -15px;
+                  margin-bottom: -12px;
+                  vertical-align: middle;
+                  display: inline-block;
+                  background-color: #637AB3;
+                }
+              }
+
+              span {
+                font-size: 12px;
+                font-weight: 600;
+                font-stretch: normal;
+                line-height: 12px;
+                letter-spacing: 0px;
+                color: #637AB3;
+                text-align: center;
+                margin-top: 6px;
+              }
+            }
+          }
+
+          .contetn-bottom {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            span {
+              width: 100%;
+              height: 12px;
+            }
+
+            span:first-child {
+              font-size: 12px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 12px;
+              letter-spacing: 0px;
+              text-align: center;
+              color: rgba(81, 81, 81, 1);
+
+              &::before {
+                content: '';
+                margin-right: 4px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-top: -15px;
+                margin-bottom: -12px;
+                vertical-align: middle;
+                display: inline-block;
+                background-color: rgba(81, 81, 81, 0.9);
+              }
+            }
+
+            span:last-child {
+              font-size: 12px;
+              font-weight: 600;
+              font-stretch: normal;
+              line-height: 12px;
+              letter-spacing: 0px;
+              color: #010101;
+              text-align: center;
+              margin-top: 6px;
+            }
+          }
+        }
+
+      }
+    }
+
+    .ym-coal-strip-today {
+      width: 100%;
+      height: 50px;
+      padding: 0px 33px;
+      margin: -15px 0 35px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &>div {
+        width: 110px;
+        height: 100%;
+      }
+
+      .strip-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+          width: 100%;
+          height: 17px;
+          line-height: 17px;
+          font-size: 17px;
+          color: rgba(1, 1, 5, 0.8);
+          text-align: center;
+          margin: 6px 0;
+        }
+
+        .today-contetn {
+          width: 94px;
+          height: 32px;
+          background-color: #7872F9;
+          border-radius: 16px;
+          border: solid 1px rgba(37, 37, 37, 0.6);
+          padding: 9px 0;
+          font-size: 12px;
+          line-height: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: rgba(1, 1, 5, 0.8);
+
+          font {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            color: #FFFFFF;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .ym-raw-coal,
+    .ym-stripping-coal {
+      position: relative;
+      width: 100%;
+      height: 182px;
+      margin-bottom: 19px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 12px;
+      box-shadow: 0px 0px 8px 1PX #25252540;
+      border: solid 1px rgba(37, 37, 37, 0.4);
+
+      &>span {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: calc(100% - 24px);
+        font-size: 13px;
+        height: 13px;
+        line-height: 13px;
+        color: #010101;
+        font-weight: 400;
+        z-index: 3;
+      }
+    }
+  }
+}
